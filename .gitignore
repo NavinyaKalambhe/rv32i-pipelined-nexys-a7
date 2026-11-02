@@ -1,0 +1,23 @@
+# Vivado generated files
+vivado_project/
+*.jou
+*.log
+*.str
+*.backup.*
+.Xil/
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+*.ip_user_files/
+*.gen/
+*.srcs/
+*.xpr
+# simulation / build output
+build/
+*.vcd
+*.out
+frame.txt
+fb.txt
+sw/*.elf
+sw/*.bin

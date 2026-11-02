@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tools
+        run: sudo apt-get update && sudo apt-get install -y iverilog gcc-riscv64-unknown-elf
+      - name: Assemble programs
+        run: make mem random
+      - name: Run all simulations
+        run: |
+          make test | tee results.txt
+          ! grep -E "^FAIL|FAILED|Error" results.txt
+          test "$(grep -c '^PASS\|PASSED' results.txt)" -ge 15
