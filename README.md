@@ -1,14 +1,15 @@
 # RV32I 5-stage pipelined CPU with VGA output (Nexys A7)
 
-[![CI](https://github.com/YOUR_USERNAME/rv32i-pipelined-nexys-a7/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/rv32i-pipelined-nexys-a7/actions)
+[![CI](https://github.com/NavinyaKalambhe/rv32i-pipelined-nexys-a7/actions/workflows/ci.yml/badge.svg)](https://github.com/NavinyaKalambhe/rv32i-pipelined-nexys-a7/actions)
 
 A 5-stage pipelined implementation of the **RISC-V RV32I** base ISA in Verilog, running on a
 Digilent **Nexys A7** (Artix-7) FPGA, with a memory-mapped **VGA framebuffer** that programs
 running on the CPU draw into. A simple single-cycle core is included as the golden reference
 for verification.
 
-<!-- Replace with a photo / GIF of the board running the bouncing box -->
-| Bouncing box (simulated VGA output) | Colour bars (simulated) | Paint-trail mode, SW9 (simulated) |
+[▶ Watch the demo video](docs/testvid.mp4)
+
+| Bouncing box (simulated) | Colour bars (simulated) | Paint trail (simulated) |
 |---|---|---|
 | ![bounce](docs/vga_bounce_sim.png) | ![bars](docs/vga_colorbars_sim.png) | ![trail](docs/vga_trail_sim.png) |
 
@@ -98,9 +99,9 @@ Fill in after your own Vivado run (Reports > Report Utilization / Timing Summary
 
 | Metric | Value |
 |---|---|
-| LUTs / FFs / BRAM36 | _TODO_ |
-| Worst setup slack @ 50 MHz | _TODO_ |
-| Maximum clock frequency (WNS-based estimate) | _TODO_ |
+| LUTs / FFs / BRAM36 | 1838 |
+| Worst setup slack @ 50 MHz | 6.903ns |
+| Maximum clock frequency (WNS-based estimate) | 100MHz |
 
 ## Switch controls (default demo, `sw/interactive.S`)
 | Switch | Function |
