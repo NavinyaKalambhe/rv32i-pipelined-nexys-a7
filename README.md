@@ -7,7 +7,7 @@ Digilent **Nexys A7** (Artix-7) FPGA, with a memory-mapped **VGA framebuffer** t
 running on the CPU draw into. A simple single-cycle core is included as the golden reference
 for verification.
 
-[▶ Watch the demo video](docs/testvid.mp4)
+[![Demo video](https://img.youtube.com/vi/shorts/FZ-TR2N6osg/hqdefault.jpg)](https://www.youtube.com/shorts/FZ-TR2N6osg)
 
 | Bouncing box (simulated) | Colour bars (simulated) | Paint trail (simulated) |
 |---|---|---|
